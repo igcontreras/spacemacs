@@ -360,16 +360,17 @@
                         smex-save-file (concat spacemacs-cache-directory
                                                ".smex-items"))))
 
-(defun ivy/init-swiper ()
-  (use-package swiper
-    :config
-    (progn
-      (spacemacs/set-leader-keys
-        "ss" 'swiper
-        "sS" 'spacemacs/swiper-region-or-symbol
-        "sb" 'swiper-all
-        "sB" 'spacemacs/swiper-all-region-or-symbol)
-      (global-set-key "\C-s" 'swiper))))
+(defun ivy/init-swiper ())
+  ;; (use-package swiper
+  ;;   :config
+  ;;   (progn
+  ;;     (spacemacs/set-leader-keys
+  ;;       "ss" 'swiper
+  ;;       "sS" 'spacemacs/swiper-region-or-symbol
+  ;;       "sb" 'swiper-all
+  ;;       "sB" 'spacemacs/swiper-all-region-or-symbol)
+  ;;     (global-set-key "\C-s" 'swiper)
+  ;;     )))
 
 (defun ivy/init-wgrep ()
   (evil-define-key 'normal wgrep-mode-map ",," 'wgrep-finish-edit)
